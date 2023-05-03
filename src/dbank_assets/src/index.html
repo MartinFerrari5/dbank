@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DBank</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div id="root">
+    <div class="img">
+      <img src="https://static.vecteezy.com/system/resources/previews/000/287/488/original/bank-vector-icon.jpg" alt="Bank">
+    </div>
+    <h1 class="title">Current Balance: <span class="balance"></span></h1>
+    <hr class="line">
+    <form id="form" action="#">
+
+      <div class="campos">
+        <label for="">Amount to Top Up</label>
+        <input class="inputs" id="topUp" type="number" step="0.01" min="0" name="topUp">
+      </div>
+      <div class="campos">
+        <label for="add">Amount to withdraw</label>
+        <input class="inputs" id="withdraw" type="number"  step="0.01" min="0" name="withdraw" id="add">
+      </div>
+      <div class="button-container">
+        <button type="submit" class="bankButton">Finalise Transaction</button>
+      </div>
+    </form>
+  </div>
+  <!-- <script src="index.js"></script> -->
+</body>
+</html>
